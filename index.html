@@ -14,13 +14,24 @@ body{
     color:#222;
 }
 
-header{
+/* header{
     background:#003366;
     color:white;
     padding:60px;
     text-align:center;
-}
+} */
 
+header{
+    background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+                url("sun.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 120px 20px;
+    text-align: center;
+}
+    
 section{
     max-width:900px;
     margin:auto;
@@ -38,6 +49,14 @@ footer{
     padding:20px;
 }
 
+.sun-image{
+    width:450px;
+    max-width:90%;
+    margin-top:25px;
+    border-radius:12px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.4);
+}
+    
 </style>
 
 </head>
@@ -49,6 +68,8 @@ footer{
 <h1>Souvik Das</h1>
 
 <p>Plasma Physics • Solar Plasma Physics • Helioseismology • Computational Astrophysics</p>
+
+<img src="sun.jpg" alt="Sun" class="sun-image">
 
 </header>
 
