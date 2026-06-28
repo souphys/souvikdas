@@ -29,107 +29,66 @@ body{
 /* ================= HEADER ================= */
 
 header{
-
     height:100vh;
-
     background:
-    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
-    url("sun.jpg");
+        linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+        url("sun.jpg");
 
     background-size:cover;
     background-position:center;
+    background-repeat:no-repeat;
 
     display:flex;
     justify-content:center;
     align-items:center;
     text-align:center;
-    color:white;
 
+    color:white;
 }
 
 .hero{
-
-    background:rgba(255,255,255,.08);
-
-    backdrop-filter:blur(10px);
-
-    padding:50px;
-
-    border-radius:20px;
-
-    width:90%;
     max-width:800px;
-
+    padding:20px;
 }
 
 .pic-image{
-
     width:180px;
     height:180px;
-
-    object-fit:cover;
-
     border-radius:50%;
-
+    object-fit:cover;
     border:5px solid white;
-
-    box-shadow:0 12px 35px rgba(0,0,0,.5);
-
+    box-shadow:0 8px 25px rgba(0,0,0,.5);
     margin-bottom:25px;
-
 }
 
 .hero h1{
-
-    font-size:56px;
-    font-weight:700;
-
+    font-size:58px;
+    margin-bottom:10px;
+    font-weight:bold;
+    letter-spacing:1px;
 }
 
 .hero p{
-
-    margin-top:10px;
-
     font-size:22px;
-
-    color:#eee;
-
-}
-
-.buttons{
-
-    margin-top:35px;
-
+    margin:10px 0;
+    line-height:1.6;
 }
 
 .btn{
-
     display:inline-block;
-
-    padding:14px 30px;
-
-    margin:10px;
-
-    border-radius:40px;
-
-    background:#ff9800;
-
+    margin:25px 10px 0;
+    padding:14px 28px;
+    border:2px solid white;
     color:white;
-
     text-decoration:none;
-
-    font-weight:600;
-
+    border-radius:30px;
     transition:.3s;
-
+    font-weight:bold;
 }
 
 .btn:hover{
-
-    background:#ffb74d;
-
-    transform:translateY(-3px);
-
+    background:white;
+    color:#003366;
 }
 
 /* ================= CONTENT ================= */
@@ -190,8 +149,6 @@ footer{
 
 <header>
 
-<header>
-
 <div class="hero">
 
 <img src="pic.jpg" class="pic-image">
@@ -199,7 +156,7 @@ footer{
 <h1>Souvik Das</h1>
 
 <p>
-Theoretical Plasma Astrophysicist
+    <strong>Theoretical Plasma Astrophysicist</strong>
 </p>
     
 <p>
