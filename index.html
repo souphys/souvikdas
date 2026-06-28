@@ -7,54 +7,179 @@
 
 <style>
 
-body{
-    font-family:Arial, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+*{
     margin:0;
-    background:#f5f7fa;
-    color:#222;
+    padding:0;
+    box-sizing:border-box;
 }
 
-/* header{
-    background:#003366;
-    color:white;
-    padding:60px;
-    text-align:center;
-} */
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f4f7fb;
+    color:#333;
+    line-height:1.7;
+}
+
+/* ================= HEADER ================= */
 
 header{
-    background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
-                url("sun.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: white;
-    padding: 120px 20px;
-    text-align: center;
-}
-    
-section{
-    max-width:600px;
-    margin:auto;
-    padding:40px;
-}
 
-h2{
-    color:#003366;
-}
+    height:100vh;
 
-footer{
-    background:#003366;
-    color:white;
+    background:
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url("sun.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
     text-align:center;
-    padding:20px;
+    color:white;
+
+}
+
+.hero{
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(10px);
+
+    padding:50px;
+
+    border-radius:20px;
+
+    width:90%;
+    max-width:800px;
+
 }
 
 .pic-image{
-    width:200px;
-    max-width:90%;
-    margin-top:25px;
-    border-radius:12px;
-    box-shadow:0 10px 25px rgba(0,0,0,0.4);
+
+    width:180px;
+    height:180px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:5px solid white;
+
+    box-shadow:0 12px 35px rgba(0,0,0,.5);
+
+    margin-bottom:25px;
+
+}
+
+.hero h1{
+
+    font-size:56px;
+    font-weight:700;
+
+}
+
+.hero p{
+
+    margin-top:10px;
+
+    font-size:22px;
+
+    color:#eee;
+
+}
+
+.buttons{
+
+    margin-top:35px;
+
+}
+
+.btn{
+
+    display:inline-block;
+
+    padding:14px 30px;
+
+    margin:10px;
+
+    border-radius:40px;
+
+    background:#ff9800;
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.btn:hover{
+
+    background:#ffb74d;
+
+    transform:translateY(-3px);
+
+}
+
+/* ================= CONTENT ================= */
+
+section{
+
+    max-width:1000px;
+
+    margin:auto;
+
+    padding:80px 30px;
+
+}
+
+section h2{
+
+    color:#003366;
+
+    font-size:36px;
+
+    margin-bottom:25px;
+
+}
+
+ul{
+
+    padding-left:25px;
+
+}
+
+li{
+
+    margin-bottom:10px;
+
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+
+    background:#002244;
+
+    color:white;
+
+    text-align:center;
+
+    padding:25px;
+
+    margin-top:60px;
+
 }
     
 </style>
@@ -65,7 +190,33 @@ footer{
 
 <header>
 
+<header>
+
+<div class="hero">
+
+<img src="pic.jpg" class="pic-image">
+
 <h1>Souvik Das</h1>
+
+<p>
+Theoretical Plasma Astrophysicist
+</p>
+
+<p>
+Solar Plasma Physics • Helioseismology • Computational Astrophysics
+</p>
+
+<div class="buttons">
+
+<a href="#" class="btn">Download CV</a>
+
+<a href="#publications" class="btn">Publications</a>
+
+<a href="#contact" class="btn">Contact</a>
+
+</div>
+
+</header>
 
 <p>Plasma Physics • Solar Plasma Physics • Helioseismology • Computational Astrophysics</p>
 
